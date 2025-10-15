@@ -123,6 +123,88 @@
                     name="pergunta8" placeholder="Digite sua resposta aqui">
                 </form>
             </section>
+            </section>
+            <!--tabela de pontuação-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>0-2 </td>
+                        <td>Não desista! Cada tentantiva é uma
+                             oportunidade de você aprender</td>
+                    </tr>
+                    <tr>
+                        <td>3-4 </td>
+                        <td>Não deista! Cada tentantiva é uma
+                             oportunidade de você aprender</td>
+                    <tr>
+                        <td>5-7 </td>
+                        <td>Bom trabalho! Você está no caminho certo</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Excelente! Você está muito bom 
+                            informado sobre programação </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Boa sorte na próxima!</td><!-- colspan se refere as colunas para pcupar duas colunas o caso-->
+                        </tr>
+                    </tfoot>        
+                </table>
+            </section>
+             <!--Lista de respostas -->
+             <section>
+               <h2>Verifique suas respostas</h2>
+              <details>
+                <sumary>Clique para ver as respostas corretas</sumary>
+                <ol>
+                 <li>HTML</li>
+                 <li>Domínio</li>
+                 <li>Exemplo de senha forte: P@ssw0rd!</li>
+                 <li>1995-12-04</li>
+                 <li>HTML, CSS, SQL</li>
+                 <li>Arquivo HTML</li>
+                 <li>type</li>
+                 <li>Java</li>
+                </ol>
+                </details>
+             </section>
+             <!--Formuário de feedback -->
+             <section>
+                <h2>Nos dê seu feedback</h2>
+                <form>
+                    <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentários">Comentários:</label><br>
+                    <textarea id="comentários" name="comentários" rows="4" cols="50" placeholder="Digite 
+                    seus comentários aqui">
+                    </textarea>
+                    </fieldset>
+                </form>
+              </section>
+        </main>
+        <footer>
+             <p>&copyQuiz de progrmadores.
+                 Todos od direitos reservados</p>
+                 <p>Para conhecer outros quizzes clique  <a href="sobremim.html"
+                 target="_blank">clique aqui</a></p><br>
+                 <button onclick="alert('Feedback Enviado')">Envie o feedback</button>
+        </footer>
+    </body>
+</html>
         </main>
         <footer></footer>
     </body>
