@@ -1,0 +1,271 @@
+/* Reset e base */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #1f2937;
+  /* gray-800 */
+  background: #f8fafc;
+  /* slate-50 */
+  line-height: 1.6;
+}
+
+/* Layout principal */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  padding: 40px 16px;
+  text-align: center;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Sections como cards */
+section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  /* gray-200 */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #111827;
+  /* gray-900 */
+}
+
+/* Tipografia e elementos inline */
+p {
+  margin: 0.25rem 0 0.75rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #9ca3af;
+  cursor: help;
+}
+
+/* Formularios */
+form {
+  margin-top: 8px;
+}
+
+label {
+  margin-left: 6px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  max-width: 520px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  /* gray-300 */
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  margin: 6px 0 10px;
+}
+
+input::file-selector-button {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #6366f1;
+  /* indigo-500 */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Radio e checkbox alinhados */
+input[type="radio"],
+input[type="checkbox"] {
+  transform: translateY(1px);
+}
+
+/* Select mínimo corrigido para o HTML existente */
+#p7 {
+  max-width: 240px;
+}
+
+/* Tabela de pontuação */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+thead th {
+  background: #111827;
+  /* gray-900 */
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+tbody tr:nth-child(even) td {
+  background: #f9fafb;
+}
+
+/* Figure e imagens */
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+figcaption {
+  color: #6b7280;
+  /* gray-500 */
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+/* Details/summary das respostas */
+details {
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fafafa;
+}
+
+details>summary,
+details>sumary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Fieldset do feedback */
+fieldset {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+legend {
+  padding: 0 6px;
+  font-weight: 600;
+}
+
+/* Links e botões */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background: #10b981;
+  /* emerald-500 */
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.05s ease, filter 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.25);
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Footer */
+footer {
+  margin-top: 24px;
+  padding: 24px 16px 48px;
+  text-align: center;
+  color: #6b7280;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 16px;
+  }
+}
